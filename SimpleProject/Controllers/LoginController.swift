@@ -73,7 +73,7 @@ class LoginController: UIViewController {
             return
         }
         print("Success Log In")
-        
+        UserDefaults.standard.set(true, forKey: "IsUserLoggedIn")
     }
     
 }
